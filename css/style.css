@@ -30,8 +30,22 @@
   grid-row: 1 / 3;
   display: grid;
   padding: 15px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px 10px;
 }
 
 .sidebar img {
   filter: brightness(0) invert(1);
+  vertical-align: bottom;
+}
+
+.company-logo,
+.link-logo {
+  justify-self: center;
+}
+
+.links-section,
+.settings-section {
+  padding-top: 30px;
 }
