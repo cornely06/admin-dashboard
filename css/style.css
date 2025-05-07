@@ -18,9 +18,17 @@
 
 .company-logo {
   width: 2em;
+
+  filter: brightness(0) invert(1);
 }
 
 .link-logo {
+  width: 1em;
+
+  filter: brightness(0) invert(1);
+}
+
+.bl-logo {
   width: 1em;
 }
 
@@ -30,13 +38,27 @@
   grid-row: 1 / 3;
   display: grid;
   padding: 15px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 30px 1fr;
   align-items: center;
   gap: 10px 10px;
+  align-content: start;
 }
 
-.sidebar img {
-  filter: brightness(0) invert(1);
+.company-logo,
+.link-logo,
+.bl-logo {
+  vertical-align: bottom;
+}
+
+.profile-img-sm {
+  width: 2em;
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+
+.profile-img-lg {
+  width: 3em;
+  border-radius: 50%;
   vertical-align: bottom;
 }
 
@@ -48,4 +70,81 @@
 .links-section,
 .settings-section {
   padding-top: 30px;
+}
+
+.header-buttons {
+  background-color: var(--sidebar-color);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+
+.header-search {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-bottom: 15px;
+}
+
+.alert {
+  justify-self: end;
+}
+
+.header-username {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="search"] {
+  width: 80%;
+  max-width: 400px;
+  border: none;
+  border-radius: 25px;
+  background-color: lightgrey;
+  padding: 3px 10px;
+}
+
+.searchbar,
+.alert {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  gap: 10px;
+}
+
+.alert {
+  gap: 15px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.user-links {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.header {
+  padding: 10px 25px;
+}
+
+.sm-username {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.lg-username {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.greeting {
+  font-size: 0.8em;
 }
