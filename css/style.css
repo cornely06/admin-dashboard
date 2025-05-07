@@ -215,3 +215,31 @@ input[type="search"] {
   bottom: 10px;
   right: 10px;
 }
+
+.announcement-cards {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px -2px darkslategray;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement-title {
+  font-size: 0.75em;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+.announcement-content {
+  font-size: 0.65em;
+}
+
+.announcement-card {
+  border-bottom: 1px solid var(--background-gray);
+  padding: 10px 0;
+}
+
+.announcement-card:last-child {
+  border: none;
+}
