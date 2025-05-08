@@ -10,6 +10,13 @@
   --sidebar-color: #1992d4;
   --background-gray: #e2e8f0;
   --card-border: #f0b429;
+  --system-ui: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+    sans-serif;
+}
+
+body {
+  font-family: "Roboto", var(--system-ui);
 }
 
 .grid-container {
@@ -204,7 +211,7 @@ input[type="search"] {
 }
 
 .card-text {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .card-icons {
@@ -242,4 +249,18 @@ input[type="search"] {
 
 .announcement-card:last-child {
   border: none;
+}
+
+.trending-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px -2px darkslategray;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-links {
+  display: flex;
+  gap: 10px;
 }
